@@ -86,6 +86,15 @@
                                     <action selector="searchProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwT-9D-bld"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kd1-5j-dWl">
+                                <rect key="frame" x="137" y="579" width="120" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Product"/>
+                                <connections>
+                                    <segue destination="qwh-N5-kZM" kind="show" id="Hsm-W7-rTB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -138,7 +147,7 @@
             <objects>
                 <viewController id="qwh-N5-kZM" customClass="AddProductViewController" customModule="A2_iOS_Adel_101532466" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TpE-0e-1FX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qxh-jU-HN6">
@@ -178,6 +187,7 @@
                         <viewLayoutGuide key="safeArea" id="g0D-HI-8Pi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vwN-oE-Osx"/>
                     <connections>
                         <outlet property="descField" destination="Jtf-4g-aiw" id="YsJ-rx-SLl"/>
                         <outlet property="nameField" destination="Qxh-jU-HN6" id="9vs-bx-4zo"/>
