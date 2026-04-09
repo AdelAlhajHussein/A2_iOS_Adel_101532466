@@ -71,20 +71,20 @@ class ViewController: UIViewController {
     func displayProduct() {
         if products.count > 0 {
             let product = products[index]
-            nameLabel.text = product.value(forKey: "productName") as? String
-            descriptionLabel.text = product.value(forKey: "productDescription") as? String
 
+            let id = product.value(forKey: "productID") as? Int64 ?? 0
+            let name = product.value(forKey: "productName") as? String ?? ""
+            let desc = product.value(forKey: "productDescription") as? String ?? ""
+            let price = product.value(forKey: "productPrice") as? Double ?? 0.0
+            let provider = product.value(forKey: "productProvider") as? String ?? ""
 
-            if let price = product.value(forKey: "productPrice") as? Double {
-                priceLabel.text = "$\(price)"
-            } else {
-                priceLabel.text = "$0.0"
-            }
-
-
-            providerLabel.text = product.value(forKey: "productProvider") as? String
+            nameLabel.text = "ID: \(id) - \(name)"
+            descriptionLabel.text = "Description: \(desc)"
+            priceLabel.text = String(format: "Price: $%.2f", price)
+            providerLabel.text = "Provider: \(provider)"
         }
     }
+
 
 
     @IBAction func nextProduct(_ sender: UIButton) {
