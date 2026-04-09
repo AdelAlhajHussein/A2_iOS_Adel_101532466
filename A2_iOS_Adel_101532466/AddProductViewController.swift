@@ -57,9 +57,14 @@ class AddProductViewController: UIViewController {
 
 
         try! context.save()
+        let alert = UIAlertController(title: "Success", message: "Product added successfully", preferredStyle: .alert)
 
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            self.navigationController?.popViewController(animated: true)
+        }))
 
-        navigationController?.popViewController(animated: true)
+        present(alert, animated: true)
+
     }
 }
 
