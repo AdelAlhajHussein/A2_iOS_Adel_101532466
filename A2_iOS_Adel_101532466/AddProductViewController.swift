@@ -18,6 +18,22 @@ class AddProductViewController: UIViewController {
     @IBOutlet weak var descField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var providerField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        nameField.layer.borderColor = UIColor.black.cgColor
+        nameField.layer.borderWidth = 1
+
+        descField.layer.borderColor = UIColor.black.cgColor
+        descField.layer.borderWidth = 1
+
+        priceField.layer.borderColor = UIColor.black.cgColor
+        priceField.layer.borderWidth = 1
+
+        providerField.layer.borderColor = UIColor.black.cgColor
+        providerField.layer.borderWidth = 1
+    }
 
 
     func getContext() -> NSManagedObjectContext {
