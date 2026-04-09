@@ -170,11 +170,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save Product"/>
+                                <connections>
+                                    <action selector="saveProduct:" destination="qwh-N5-kZM" eventType="touchUpInside" id="SEi-KZ-7IP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g0D-HI-8Pi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="descField" destination="Jtf-4g-aiw" id="YsJ-rx-SLl"/>
+                        <outlet property="nameField" destination="Qxh-jU-HN6" id="9vs-bx-4zo"/>
+                        <outlet property="priceField" destination="mTf-b6-Sdw" id="Dh0-yD-keb"/>
+                        <outlet property="providerField" destination="5fc-ma-fB6" id="3DG-VF-uWG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f85-YB-vCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
