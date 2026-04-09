@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         insertProductsIfNeeded()
         fetchProducts()
         displayProduct()
+        searchField.layer.borderColor = UIColor.black.cgColor
+        searchField.layer.borderWidth = 1
     }
 
 
