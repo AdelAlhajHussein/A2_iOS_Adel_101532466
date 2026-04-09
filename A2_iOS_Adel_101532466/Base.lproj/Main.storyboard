@@ -69,6 +69,8 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="YJd-f5-gPl" id="wDR-G7-wf0"/>
                         <outlet property="nameLabel" destination="UPE-jp-Afk" id="YcW-hk-BTG"/>
+                        <outlet property="nextButton" destination="wZg-If-DVc" id="c5e-bO-hPF"/>
+                        <outlet property="prevButton" destination="jba-4D-pwz" id="zEo-Ay-jf6"/>
                         <outlet property="priceLabel" destination="6Cs-4b-nuf" id="7yp-Ph-vCy"/>
                         <outlet property="providerLabel" destination="fs8-hQ-fja" id="zLM-11-xp2"/>
                     </connections>
