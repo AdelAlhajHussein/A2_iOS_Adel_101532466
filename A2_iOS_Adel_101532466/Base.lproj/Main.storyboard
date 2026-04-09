@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="-11.450381679389313" y="110.56338028169014"/>
         </scene>
-        <!--View Controller-->
+        <!--Product List View Controller-->
         <scene sceneID="FiK-S4-AZf">
             <objects>
-                <viewController id="Mfj-F6-Tgv" sceneMemberID="viewController">
+                <viewController id="Mfj-F6-Tgv" customClass="ProductListViewController" customModule="A2_iOS_Adel_101532466" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="df6-PD-ZNK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,6 @@
                                 <rect key="frame" x="35" y="88" width="328" height="713"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
