@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     var products: [NSManagedObject] = []
     var index = 0
 
-
+    
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
