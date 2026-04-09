@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="658.77862595419845" y="50"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Product View Controller-->
         <scene sceneID="5UN-gM-PQ1">
             <objects>
-                <viewController id="qwh-N5-kZM" sceneMemberID="viewController">
+                <viewController id="qwh-N5-kZM" customClass="AddProductViewController" customModule="A2_iOS_Adel_101532466" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TpE-0e-1FX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
