@@ -24,15 +24,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var searchField: UITextField!
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         insertProductsIfNeeded()
         fetchProducts()
         displayProduct()
+
         searchField.layer.borderColor = UIColor.black.cgColor
         searchField.layer.borderWidth = 1
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
 
 
     func getContext() -> NSManagedObjectContext {
