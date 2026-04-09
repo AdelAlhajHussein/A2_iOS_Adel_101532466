@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var providerLabel: UILabel!
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
-
+    @IBOutlet weak var searchField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +102,24 @@ class ViewController: UIViewController {
             index -= 1
             displayProduct()
         }
+    }
+    
+    @IBAction func searchProduct(_ sender: UIButton) {
+        let keyword = searchField.text ?? ""
+
+
+        let context = getContext()
+        let request = NSFetchRequest<NSManagedObject>(entityName: "Product")
+
+
+        if !keyword.isEmpty {
+            request.predicate = NSPredicate(format: "productName CONTAINS[cd] %@ OR productDescription CONTAINS[cd] %@", keyword, keyword)
+        }
+
+
+        products = try! context.fetch(request)
+        index = 0
+        displayProduct()
     }
 }
 
